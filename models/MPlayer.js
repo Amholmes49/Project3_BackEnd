@@ -5,8 +5,8 @@ const PlayerSchema = new mongoose.Schema({
   name: String,
   team: String,
   number: Number,
-  throws: String, 
-  position: String
+  position: String,
+  team_id: Number,
 });
 
 const Player = mongoose.model('Player', PlayerSchema);
