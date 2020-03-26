@@ -4,7 +4,14 @@
 const mongoose = require('mongoose')
 
 // set the uri for connecting to our local mongodb
-const mongoURI = 'mongodb://localhost/fantasy_stickball'
+//const mongoURI = 'mongodb://localhost/fantasy_stickball'
+let mongoURI = "";
+
+if (process.env.NODE_ENV === "production") {
+  mongoURI = process.env.MONGODB_URI;
+} else {
+  mongoURI = "mongodb://localhost/fantasy_stickball";
+}
 
 // connect to the database, with the imported mongoose instance
 mongoose
