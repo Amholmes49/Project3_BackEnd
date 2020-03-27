@@ -3,7 +3,7 @@
 const mongoose = require('./connection')
 const Players = require('../models/MPlayer')
 const Teams = require('../models/MTeam')
-const Venues = require('../models/MVenue')
+
 
 Players.remove({})
 // Players.collection.insertMany([
@@ -44,7 +44,7 @@ Teams.remove({})
 // .then(Teams => console.log(Teams))
 // .catch(err => console.log(err))	
 
-Venues.remove({})
+
 // Venues.collection.insertMany([
 // 	{ 
 // 	"Home_Venue": "Fenway", 

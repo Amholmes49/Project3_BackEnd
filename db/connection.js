@@ -4,7 +4,7 @@
 const mongoose = require('mongoose')
 
 // set the uri for connecting to our local mongodb
-//const mongoURI = 'mongodb://localhost/fantasy_stickball'
+
 let mongoURI = "";
 
 if (process.env.NODE_ENV === "production") {

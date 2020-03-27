@@ -3,13 +3,7 @@ const mongoose = require('../db/connection');
 
 const TeamSchema = new mongoose.Schema({
   TeamName: String,
-  Division: String,
-  Home_Venue: {
-      ref: "Venue",
-      type: mongoose.Schema.Types.ObjectId
-  },
-  
-  
+  Division: String, 
 });
 
 const Team = mongoose.model('Team', TeamSchema);
